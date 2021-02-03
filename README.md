@@ -4,7 +4,7 @@ prints the number of inflight http requests
 
 ## install
 
-    go get github.com/matti/gounter
+    go get -u github.com/matti/gounter
 
 ## run
 
