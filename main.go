@@ -37,7 +37,7 @@ func requestHandler(ctx *fasthttp.RequestCtx) {
 	atomic.AddUint64(&started, 1)
 
 	delta := started - completed
-	fmt.Fprintf(ctx, "%d - %d = %d\n\n", started, completed, delta)
+	fmt.Printf("%d\n", delta)
 	if delay > 0 {
 		time.Sleep(delay)
 	}
